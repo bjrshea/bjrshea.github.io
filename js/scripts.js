@@ -10,16 +10,13 @@ function stickyHeader() {
   }
 }
 
-document.addEventListener("scroll", stickyHeader);
-
-
 function pushMountain() {
+  const pageWidth = window.innerWidth;
   const pagePosition = window.pageYOffset;
-  document.getElementById("mountain").style.marginBottom = `${pagePosition / 4}px`;
+  if (pageWidth > 500) {
+    document.getElementById("mountain").style.marginBottom = `${pagePosition / 4}px`;
+  }
 }
-
-document.addEventListener("scroll", pushMountain);
-
 
 function showImages() {
   const about = document.getElementById("about").offsetHeight;
@@ -49,18 +46,22 @@ function showImages() {
       document.getElementById("benchmark-splash").classList.add("animation-delay");
     }
   } else {
-    if (abingdon <= pagePosition) {
+    if ((abingdon - 150) <= pagePosition) {
       document.getElementById("abingdon-splash").classList.add("animation");
       document.getElementById("abingdon-services").classList.add("animation-delay");
     }
-    if ((vetVal + vetVal) <= pagePosition) {
+    if ((vetVal + (vetVal - 150)) <= pagePosition) {
       document.getElementById("vet-val-splash").classList.add("animation");
     }
-    if ((benchmark + benchmark + benchmark) <= pagePosition) {
+    if ((benchmark + benchmark + (benchmark / 2)) <= pagePosition) {
       document.getElementById("benchmark-results").classList.add("animation");
       document.getElementById("benchmark-splash").classList.add("animation-delay");
     }
   }
 }
+
+document.addEventListener("scroll", stickyHeader);
+
+document.addEventListener("scroll", pushMountain);
 
 document.addEventListener("scroll", showImages);

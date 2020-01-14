@@ -17,7 +17,6 @@ p, li {
   line-height: 1.5;
 }
 
-
 a {
   text-decoration: none;
 }
@@ -125,6 +124,10 @@ section:not(#hero) {
   margin-top: 10px;
   padding: 10px 30px;
   text-align: center;
+}
+
+.in-dev:hover {
+  cursor: not-allowed;
 }
 
 #hero {
@@ -255,7 +258,7 @@ section:not(#hero) {
 
 #abingdon-splash, #abingdon-services {
   width: 30vw;
-  min-width: 300px;
+  min-width: 285px;
 }
 
 #abingdon-splash {
@@ -295,7 +298,7 @@ section:not(#hero) {
 }
 
 #vet-val-splash {
-  min-width: 300px;
+  min-width: 285px;
   width: 30vw;
 }
 
@@ -334,7 +337,7 @@ section:not(#hero) {
 }
 
 #benchmark-results {
-  min-width: 300px;
+  min-width: 260px;
   width: 30vw;
 }
 
@@ -537,7 +540,7 @@ section:not(#hero) {
 
 @media screen and (max-width: 1335px) {
   section:not(#hero) {
-    height: auto;
+    min-height: auto;
   }
   .screenshots-inner {
     width: 100%;
@@ -620,5 +623,70 @@ section:not(#hero) {
   }
   .social-icons {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  p, li {
+    font-size: 16px !important;
+  }
+  .header-right {
+    display: none;
+  }
+  #hero {
+    min-height: 90vh;
+  }
+  #waves, #mountain {
+    position: absolute;
+  }
+  #abingdon {
+    padding-bottom: 10%;
+  }
+  #vet-val, #benchmark {
+    padding: 10% 0;
+  }
+  #benchmark .screenshots-inner {
+    margin-bottom: 20px;
+  }
+  #abingdon-services {
+    display: none;
+  }
+  #abingdon-splash {
+    margin: 0 0 20px 30px;
+  }
+  #vet-val-splash {
+    margin: 0 0 20px 20px;
+  }
+  #about-icon {
+    margin-top: 30px;
+    width: 35vw;
+    height: 35vw;
+  }
+  #about-icon img {
+    width: 20vw;
+  }
+  .project-inner h1, .contact-header, .about-inner h1 {
+    font-size: 32px;
+  }
+  .about-skills ul {
+    margin-top: 2em;
+  }
+  .skills-icon {
+    font-size: 25px;
+  }
+  .button {
+    padding: 8px 20px;
+  }
+  .contact-box {
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+  .copyright {
+    text-align: center;
+    font-size: 14px;
+  }
+  .footer {
+    height: auto;
+    padding: 5% 0;
   }
 }
