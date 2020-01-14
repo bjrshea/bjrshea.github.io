@@ -1,1 +1,164 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Brendan Shea | Web Developer</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3be024d01f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="inner-header">
+        <div class="header-left">
+          <a href="#hero"><img src="assets/brendan_signature.svg" alt="Brendan Shea's Signature Logo"></a>
+        </div>
+        <div class="header-right">
+          <a href="#about">About</a>
+          <a href="#abingdon">Work</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="hero">
+        <img id="waves" src="assets/waves.png" alt="Blue Gradient Waves">
+        <img id="mountain" src="assets/mountain.png" alt="White Mountain">
+        <img id="trees" src="assets/trees.png" alt="Evergreen Trees">
+      </section>
+      <section id="about">
+        <div class="about-header">
+          <div id="about-icon">
+            <img src="assets/about_icon.png" alt="Skis and Laptop">
+          </div>
+        </div>
+        <div class="about-box">
+          <div class="about-inner">
+            <h1>About Me</h1>
+            <div class="about-text">
+              <p>My name is Brendan, and I'm an Oregon-based web developer.</p>
+              <p>I work at a marketing agency in Portland called iVET360. The work you'll see here is either client work or internal projects I was the sole developer.</p>
+              <p>When I'm not coding, you can usually find somewhere near Mt. Hood. I'm an avid skier, and I love just about anything else that gets me outdoors.</p>
+              <p>Here are some of the lanuages/libraries I'm most comfortable with:</p>
+            </div>
+            <div class="about-skills">
+              <ul id="skills-list">
+                <li>
+                  CSS
+                  <br>
+                  <i class="fab fa-css3-alt skills-icon"></i>
+                </li>
+                <li>
+                  JavaScript
+                  <br>
+                  <i class="fab fa-js-square skills-icon"></i>
+                </li>
+                <li>
+                  PHP
+                  <br>
+                  <i class="fab fa-php skills-icon"></i>
+                </li>
+                <li>
+                  React
+                  <br>
+                  <i class="fab fa-react skills-icon"></i>
+                </li>
+                <li>
+                  WordPress
+                  <br>
+                  <i class="fab fa-wordpress skills-icon"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio-section" id="abingdon">
+        <div class="screenshots">
+          <div class="screenshots-inner">
+            <img class="transform" id="abingdon-splash" src="assets/abingdon_splash.png" alt="Abingdon Veterinary Clinic's Splash Page">
+            <img class="transform" id="abingdon-services" src="assets/abingdon_services.png" alt="Abingdon Veterinary Clinic's Services Page">
+          </div>
+        </div>
+        <div class="project-desc">
+          <div class="project-inner">
+            <h1>Abingdon Square<br>Veterinary Clinic</h1>
+            <div class="divider"></div>
+            <p>Abingdon Square came to iVET360 looking for a fully custom website that wasn't built off of one of our proprietary themes. They wanted their site to tell a story and show why they're one of the best clinics in the competitive New York City market.</p>
+            <p>This site was built in WordPress to leverage various backend plugins, but the frontend was built by yours truly. Although this site was built with a fair amount of PHP and JavaScript, the majority of my time was spent in the CSS file.</p>
+            <p>Feel free to click the link below and poke around!</p>
+            <a href="https://abingdonsquarevet.com/" target="_blank">
+              <div class="button">Visit Website</div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio-section" id="vet-val">
+        <div class="project-desc">
+          <div class="project-inner">
+            <h1>VetValuation</h1>
+            <div class="divider"></div>
+            <p>Built for owners of veterinarian clinics, VetValuation is a program that calculates the financial valuation for those veterinary practices.</p>
+            <p>After deciding how granular you want your valuation to be, the calculators in this program compare sometimes up to 30 variables, factor in your EBITDA, and use conditional logic to choose a multiplier that will give practices the most accurate valuation. The calculators run almost primarily on JavaScript and some PHP.</p>
+            <p>This project is currently pending approval from the client's board of directors, but I'd be happy to provide you with a demo if you'd like. Just head down to the bottom of <a class="inlne-links" href="#contact">this page</a> and drop me a line!</p>
+            <a href="#" target="_blank">
+              <div class="button">In Development</div>
+            </a>
+          </div>
+        </div>
+        <div class="screenshots">
+          <div class="screenshots-inner">
+            <img class="transform" id="vet-val-splash" src="assets/vetval_splash.png" alt="VetValuation's Splash Page">
+          </div>
+        </div>
+      </section>
+      <section class="portfolio-section" id="benchmark">
+        <div class="screenshots">
+          <div class="screenshots-inner">
+            <img class="transform" id="benchmark-splash" src="assets/benchmark_splash.png" alt="Benchmark Report's Splash Page">
+            <img class="transform" id="benchmark-results" src="assets/benchmark_results.png" alt="Benchmark Report's Results Page">
+          </div>
+        </div>
+        <div class="project-desc">
+          <div class="project-inner">
+            <h1>iVET360's<br>Vet Marketing Report</h1>
+            <div class="divider"></div>
+            <p>Prior to the Vet Marketing website, reporting for the iVET360 marketing team was done via PDFs. Not only was this a tedious process for team, but it almost meant clients needed to scroll through loads of text everytime they got a report.</p>
+            <p>To build this report, I used a heavy dose of PHP, JavaScript, and CSS. I passed the data from the forms to the results pages via a query string, and grabbed the variables using PHP GET requests. From there, I used JavaScript to compare the data points to their respective benchmark and some CSS to give the data a little style.</p>
+            <p>Feel free to generate a fake report and see how it works. I recommend either the Benchmark or Scorecard Report.</p>
+            <a href="https://abingdonsquarevet.com/" target="_blank">
+              <div class="button">Visit Website</div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="contact-inner">
+          <div class="contact-box">
+            <h1 class="contact-header">Want to connect?</h1>
+            <p class="contact-sub-text">If you want to collaborate on a project, hire me for freelance work, or just talk about code, don't hesitate to reach out!</p>
+            <a href="mailto:bjrshea@gmail.com?subject=Portfolio Inquiry">
+              <div class="button">
+                <i class="far fa-envelope"></i>
+                <p>Email Me</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="inner-footer">
+            <p class="copyright">© 2020 Brendan Shea · All Rights Reserved</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/bjrshea/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/bjrshea" target="_blank"><i class="fab fa-github-alt"></i></a>
+              <a href="https://www.codewars.com/users/bjrshea" target="_blank"><i class="fas fa-code"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/scripts.js" type="text/javascript"></script>
+  </body>
+</html>
