@@ -240,7 +240,7 @@ section:not(#hero) {
 
 .skills-icon {
   margin-top: 10px;
-  font-size: 38px;
+  font-size: 42px;
   transform: translateY(5vw);
   opacity: 0;
 }
